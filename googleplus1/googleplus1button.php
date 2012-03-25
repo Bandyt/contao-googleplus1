@@ -64,6 +64,7 @@ class googleplus1button extends ContentElement
 	 */
 	protected function compile()
 	{
+		
 		switch($this->googleplusone_size)
 		{
 			case "s":
@@ -102,17 +103,19 @@ class googleplus1button extends ContentElement
 		}
 		$this->Template->headline=$this->headline;
 		$this->Template->cssclass="ce_googleplus1button";
-		if($this->googleplusone_loading==""){$this->googleplusone_loading="s";}
-		if($this->googleplusone_loading=="s" && $GLOBALS['TL_CONFIG']['googleplus1_addalways']!="1")
+		if($this->googleplusone_loading==''){$this->googleplusone_loading='s';}
+		if($this->googleplusone_loading=='s')
 		{
 			
 			$strTag='<script type="text/javascript" src="https://apis.google.com/js/plusone.js">';
-			if($GLOBALS['TL_CONFIG']['googleplus1_language']!="")
+			if($this->googleplusone_language!='')
 			{
-				$strTag.="{lang: '" . $GLOBALS['TL_CONFIG']['googleplus1_language'] . "'}";
+				$this->Template->button_language=$this->googleplusone_language;
+				$strTag.="{lang: '" . $this->googleplusone_language . "'}";
 			}
 			else
 			{
+				$this->Template->button_language='en-US';
 				$strTag.="{lang: 'en-US'}";
 			}
 			$strTag.='</script>';
@@ -121,12 +124,13 @@ class googleplus1button extends ContentElement
 		elseif($this->googleplusone_loading=="a")
 		{
 				$strTag='<script type="text/javascript">';
-				if($GLOBALS['TL_CONFIG']['googleplus1_language']!="")
+				if($this->googleplusone_language!='')
 				{
 					$strTag.="
 					window.___gcfg={
-					lang: '" . $GLOBALS['TL_CONFIG']['googleplus1_language'] . "'
+					lang: '" . $this->googleplusone_language . "'
 					};";
+					$this->Template->button_language=$this->googleplusone_language;
 				}
 				else
 				{
@@ -134,6 +138,7 @@ class googleplus1button extends ContentElement
 					window.___gcfg={
 					lang: 'en-US'
 					};";
+					$this->Template->button_language='en-US';
 				}
 				$strTag.='
 				(function() {

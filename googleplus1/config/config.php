@@ -63,14 +63,16 @@
  * FRONT END MODULES
  * -------------------------------------------------------------------------
  */
-$GLOBALS['FE_MOD']['googleplus1']['mod_googleplus1button'] = 'mod_googleplus1button'; 
+$GLOBALS['FE_MOD']['googleplus1']['mod_googleplus1button'] = 'mod_googleplus1button';
+$GLOBALS['FE_MOD']['googleplus1']['mod_googleplus1share'] = 'mod_googleplus1share'; 
 
 /**
  * -------------------------------------------------------------------------
  * CONTENT ELEMENTS
  * -------------------------------------------------------------------------
  */
- $GLOBALS['TL_CTE']['googleplus1']['googleplus1button'] = 'googleplus1button'; 
+ $GLOBALS['TL_CTE']['googleplus1']['googleplus1button'] = 'googleplus1button';
+ $GLOBALS['TL_CTE']['googleplus1']['googleplus1share'] = 'googleplus1share'; 
 
 /**
  * -------------------------------------------------------------------------
@@ -129,7 +131,7 @@ $GLOBALS['FE_MOD']['googleplus1']['mod_googleplus1button'] = 'mod_googleplus1but
  * HOOKS
  * -------------------------------------------------------------------------
  */
-$GLOBALS['TL_HOOKS']['generatePage'][] = array('googleplus1', 'addGoogleplusone');
+ 
 /**
  * -------------------------------------------------------------------------
  * PAGE TYPES

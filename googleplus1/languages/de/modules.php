@@ -40,5 +40,6 @@ $GLOBALS['TL_LANG']['MOD'][''] = array('', '');
  */
 $GLOBALS['TL_LANG']['FMD']['googleplus1'] = 'Google+1';
 $GLOBALS['TL_LANG']['FMD']['mod_googleplus1button'] = array('Google+1 Knopf', 'F&uuml;gt einen Google+1 Knopf der Seite hinzu.');
+$GLOBALS['TL_LANG']['FMD']['mod_googleplus1share'] = array('Google+1 Teilen-Knopf', 'F&uuml;gt einen Google+1 Teilen-Knopf der Seite hinzu.');
 
 ?>

@@ -32,7 +32,6 @@
 /**
  * Back end modules
  */
-$GLOBALS['TL_LANG']['MOD'][''] = array('', '');
 
 
 /**
@@ -40,5 +39,6 @@ $GLOBALS['TL_LANG']['MOD'][''] = array('', '');
  */
 $GLOBALS['TL_LANG']['FMD']['googleplus1'] = 'Google+1';
 $GLOBALS['TL_LANG']['FMD']['mod_googleplus1button'] = array('Google+1 button', 'Adds a Google+1 button to your page.');
+$GLOBALS['TL_LANG']['FMD']['mod_googleplus1share'] = array('Google+1 share button', 'Adds a Google+1 share button to your page.');
 
 ?>

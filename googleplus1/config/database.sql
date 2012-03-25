@@ -18,7 +18,8 @@ CREATE TABLE `tl_content` (
   `googleplusone_differenthref` char(1) NOT NULL default '',
   `googleplusone_href` varchar(255) NOT NULL default '',
   `googleplusone_size` char(1) NOT NULL default 'd',
-  `googleplusone_loading` char(1) NOT NULL default ''
+  `googleplusone_loading` char(1) NOT NULL default '',
+  `googleplusone_language` varchar(255) NOT NULL default ''
 ) ENGINE=MyISAM default CHARSET=utf8;
 
 CREATE TABLE `tl_module` (
@@ -26,5 +27,6 @@ CREATE TABLE `tl_module` (
   `googleplusone_differenthref` char(1) NOT NULL default '',
   `googleplusone_href` varchar(255) NOT NULL default '',
   `googleplusone_size` char(1) NOT NULL default 'd',
-  `googleplusone_loading` char(1) NOT NULL default ''
+  `googleplusone_loading` char(1) NOT NULL default '',
+  `googleplusone_language` varchar(255) NOT NULL default ''
 ) ENGINE=MyISAM default CHARSET=utf8;

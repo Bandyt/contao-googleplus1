@@ -30,30 +30,63 @@
 
 
 /**
- * Class googleplus1 
+ * Class googleplus1button
  *
  * @copyright  2011 Andreas Koob 
  * @author     Andreas Koob 
  * @package    Controller
  */
-class googleplus1 extends Frontend
+class googleplus1share extends ContentElement
 {
-	public function addGoogleplusone(Database_Result $objPage, Database_Result $objLayout, PageRegular $objPageRegular)
+
+	/**
+	 * Template
+	 * @var string
+	 */
+	protected $strTemplate = 'googleplus1share';
+
+	public function generate()
 	{
-		if($GLOBALS['TL_CONFIG']['googleplus1_addalways']=="1")
+
+		if (TL_MODE == 'BE')
 		{
-			$strTag='<script type="text/javascript" src="https://apis.google.com/js/plusone.js">';
-			if($GLOBALS['TL_CONFIG']['googleplus1_language']!="")
-			{
-				$strTag.="{lang: '" . $GLOBALS['TL_CONFIG']['googleplus1_language'] . "'}";
-			}
-			else
-			{
-				$strTag.="{lang: 'en-US'}";
-			}
-			$strTag.='</script>';
-			$GLOBALS['TL_HEAD'][]=$strTag;
+
+			return "Google+1 share" ;
+
 		}
+
+		return parent::generate();
+	}
+
+
+	/**
+	 * Generate module
+	 */
+	protected function compile()
+	{	
+		global $objPage;
+		if($this->googleplusone_differenthref=='1')
+		{
+			$this->Template->differenthref=true;
+			$href=$this->googleplusone_href;
+		}
+		else
+		{
+			$this->Template->differenthref=false;
+			$href=$this->Environment->url . $this->Environment->requestUri;
+		}
+		$this->Template->googleplusonehref=$this->urlEncode($href);
+		$this->Template->googleplusonetitle=$objPage->title;
+		if($this->googleplusone_language!='')
+		{
+			$this->Template->button_language=$this->googleplusone_language;
+		}
+		else
+		{
+			$this->Template->button_language='en-US';
+		}
+		$this->Template->headline=$this->headline;
+		$this->Template->cssclass="ce_googleplus1share";
 	}
 }
 

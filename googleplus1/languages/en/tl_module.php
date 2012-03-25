@@ -37,7 +37,7 @@ $GLOBALS['TL_LANG']['tl_module']['googleplusone_differenthref'] = array('Differe
 $GLOBALS['TL_LANG']['tl_module']['googleplusone_href'] = array('Address','Reference address for the button.');
 $GLOBALS['TL_LANG']['tl_module']['googleplusone_size'] = array('Size','Size of the button.');
 $GLOBALS['TL_LANG']['tl_module']['googleplusone_loading'] = array('Javascript-loading','Mode of loading the javascript from Google.');
-
+$GLOBALS['TL_LANG']['tl_module']['googleplusone_language'] = array('Google+1 Language', 'Defines the language of the Google+1 Button');
 /**
  * Reference
  */

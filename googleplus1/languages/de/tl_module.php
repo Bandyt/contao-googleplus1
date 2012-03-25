@@ -37,6 +37,7 @@ $GLOBALS['TL_LANG']['tl_module']['googleplusone_differenthref'] = array('Abweich
 $GLOBALS['TL_LANG']['tl_module']['googleplusone_href'] = array('Adresse','Referenzadresse f&uuml;r den Knopf.');
 $GLOBALS['TL_LANG']['tl_module']['googleplusone_size'] = array('Gr&ouml;&szlig;e','Gr&ouml;&szlig;e des Knopfes.');
 $GLOBALS['TL_LANG']['tl_module']['googleplusone_loading'] = array('Laden des Javascripts','Art des Ladens des Javascriptes von Google.');
+$GLOBALS['TL_LANG']['tl_module']['googleplusone_language'] = array('Google+1 Sprache', 'Definiert die Sprache des Knopfes');
 /**
  * Reference
  */

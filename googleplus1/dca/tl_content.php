@@ -32,7 +32,8 @@
  */
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'googleplusone_differenthref';
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['googleplus1button'] = '{type_legend},type,headline;{googleplus1_settings},googleplusone_size,googleplusone_count,googleplusone_differenthref,googleplusone_loading;{expert_legend:hide},cssID,space';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['googleplus1button'] = '{type_legend},type,headline;{googleplusone_settings},googleplusone_language,googleplusone_size,googleplusone_count,googleplusone_differenthref,googleplusone_loading;{expert_legend:hide},cssID,space';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['googleplus1share'] = '{type_legend},type,headline;{googleplusone_settings},googleplusone_language,googleplusone_differenthref;{expert_legend:hide},cssID,space';
 
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['googleplusone_differenthref'] = 'googleplusone_href';
 
@@ -77,5 +78,14 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['googleplusone_loading'] = array
 	'options'				  => array('a','s'),
 	'reference'				  => &$GLOBALS['TL_LANG']['tl_content']['googleplusone_loading']['reference'],
 	'eval'                    => array('mandatory'=>true)
+);
+$GLOBALS['TL_DCA']['tl_content']['fields']['googleplusone_language'] = array(
+	'label'		=>	&$GLOBALS['TL_LANG']['tl_content']['googleplusone_language'],
+	'exclude'	=>	true,
+	'inputType'	=> 'select',
+	'default'   => 'en-US',
+	'options'	=> array('ar','bg','ca','zh-CN','zh-TW','hr','cs','da','nl','en-GB','en-US','et','fil','fi','fr','de','el','iw','hi','hu','id','it','ja','ko','lv','lt','ms','no','fa','pl','pt-BR','pt-PT','ro','ru','sr','sk','sl','es','es-419','sv','th','tr','uk','vi'),
+	'reference'	=> &$GLOBALS['TL_LANG']['googleplusone_language']['reference'],
+	'eval'		=> array('mandatory'=>true)
 );
 ?>

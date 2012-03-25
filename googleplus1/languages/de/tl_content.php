@@ -31,13 +31,13 @@
  /**
  * Fields
  */ 
-$GLOBALS['TL_LANG']['tl_content']['googleplus1_settings'] = 'Google+1 Einstellungen';
+$GLOBALS['TL_LANG']['tl_content']['googleplusone_settings'] = 'Google+1 Einstellungen';
 $GLOBALS['TL_LANG']['tl_content']['googleplusone_count'] = array('Z&auml;hler','Anklicken, wenn ein Z&auml;hler angezeigt werden soll.');
 $GLOBALS['TL_LANG']['tl_content']['googleplusone_differenthref'] = array('Abweichende Adresse','Anklicken, wenn eine abweichende Adresse genutzt werden soll.');
 $GLOBALS['TL_LANG']['tl_content']['googleplusone_href'] = array('Adresse','Referenzadresse f&uuml;r den Knopf.');
 $GLOBALS['TL_LANG']['tl_content']['googleplusone_size'] = array('Gr&ouml;&szlig;e','Gr&ouml;&szlig;e des Knopfes.');
 $GLOBALS['TL_LANG']['tl_content']['googleplusone_loading'] = array('Laden des Javascripts','Art des Ladens des Javascriptes von Google.');
-
+$GLOBALS['TL_LANG']['tl_content']['googleplusone_language'] = array('Google+1 Sprache', 'Definiert die Sprache des Knopfes');
 /**
  * Reference
  */
