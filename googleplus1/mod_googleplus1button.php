@@ -104,8 +104,8 @@ class mod_googleplus1button extends Module
 		}
 		$this->Template->headline=$this->headline;
 		$this->Template->cssclass="mod_googleplus1button";
-		if($this->googleplusone_loading==''){$this->googleplusone_loading="s";}
-		if(($this->googleplusone_loading=='s')
+		if($this->googleplusone_loading==''){$this->googleplusone_loading='s';}
+		if($this->googleplusone_loading=='s')
 		{
 			$strTag='<script type="text/javascript" src="https://apis.google.com/js/plusone.js">';
 			if($this->googleplusone_language!='')
