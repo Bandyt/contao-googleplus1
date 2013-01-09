@@ -30,14 +30,14 @@
 
 
 /**
- * Class googleplus1button
+ * Class mod_googleplus1button
  *
  * @copyright  2011 Andreas Koob 
  * @author     Andreas Koob 
  * @package    Controller
  */
 
-class mod_googleplus1button extends Module
+class mod_googleplus1share extends Module
 {
 
 	/**
@@ -86,7 +86,7 @@ class mod_googleplus1button extends Module
 			$this->Template->button_language='en-US';
 		}
 		$this->Template->headline=$this->headline;
-		$this->Template->cssclass="mod_googleplus1button";
+		$this->Template->cssclass="googleplus1share";
 	}
 }
 ?>
