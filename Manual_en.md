@@ -1,0 +1,1 @@
+The manual has moved. You find the wiki now [here](http://bandyt.de/contao-googleplus1-manual.html)
